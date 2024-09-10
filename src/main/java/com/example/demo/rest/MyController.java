@@ -12,7 +12,7 @@ public class MyController {
     private Teacher teacher;
 
     @Autowired
-    public MyController(@Qualifier("mathTeacher") Teacher teacher) {
+    public MyController(@Qualifier("englishTeacher") Teacher teacher) {
         System.out.println("Bean of class - " + this.getClass().getName());
         this.teacher = teacher;
     }
@@ -20,4 +20,5 @@ public class MyController {
     public String getHomeWork() {
         return teacher.getHomeWork();
     }
+
 }

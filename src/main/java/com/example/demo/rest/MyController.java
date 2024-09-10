@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-//@Lazy
 public class MyController {
 
     private Teacher teacher;
@@ -17,12 +16,6 @@ public class MyController {
         System.out.println("Bean of class - " + this.getClass().getName());
         this.teacher = teacher;
     }
-
-//    @Autowired
-//    public void setTeacher(Teacher teacher) {
-//        this.teacher = teacher;
-//    }
-
     @GetMapping("/homework")
     public String getHomeWork() {
         return teacher.getHomeWork();

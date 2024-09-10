@@ -3,7 +3,6 @@ package com.example.demo.common;
 import org.springframework.stereotype.Component;
 
 @Component
-//@Lazy
 public class MathTeacher implements Teacher{
 
     public MathTeacher() {

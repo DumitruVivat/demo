@@ -1,11 +1,11 @@
-package com.example.demo;
+package com.example.demo.common;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class MathTeacher implements Teacher{
+public class FootballTeacher implements Teacher{
     @Override
     public String getHomeWork() {
-        return "Solve equation";
+        return "Run 10 km";
     }
 }
